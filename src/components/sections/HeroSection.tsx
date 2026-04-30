@@ -2,7 +2,7 @@ import React from 'react';
 import { useLanguage } from '../../context/LanguageContext';
 import { Navbar } from './Navbar';
 import { FadeIn } from '../ui/FadeIn';
-import MuxPlayer from '@mux/mux-player-react';
+import MuxVideo from '@mux/mux-video-react';
 import { ContactButton } from '../ui/Buttons';
 
 export const HeroSection: React.FC = () => {
@@ -35,13 +35,12 @@ export const HeroSection: React.FC = () => {
       </div>
 
       <div className="absolute inset-0 z-0 pointer-events-none">
-        <MuxPlayer
-          src="https://stream.mux.com/s8pMcOvMQXc4GD6AX4e1o01xFogFxipmuKltNfSYza0200.m3u8"
+        <MuxVideo
+          playbackId="s8pMcOvMQXc4GD6AX4e1o01xFogFxipmuKltNfSYza0200"
           autoPlay
           muted
           loop
-          controls={false}
-          noControls
+          playsInline
           style={{
             height: '100%',
             width: '100%',
