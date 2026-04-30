@@ -37,8 +37,23 @@
     display: none !important;
   }
 
-  /* Nuclear option: hide the entire media controller UI */
   mux-player::part(media-controller) {
+    display: none !important;
+  }
+
+  mux-player::part(play-button) {
+    display: none !important;
+  }
+
+  mux-player::part(center-controls) {
+    display: none !important;
+  }
+
+  mux-player::part(loading-indicator) {
+    display: none !important;
+  }
+
+  mux-player::part(poster) {
     display: none !important;
   }
 }
