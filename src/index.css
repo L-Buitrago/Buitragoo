@@ -15,4 +15,17 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
+
+  /* Hide Mux Player controls for background videos */
+  mux-player::part(control-bar) {
+    display: none !important;
+  }
+  
+  mux-player::part(center-controls) {
+    display: none !important;
+  }
+
+  mux-player::part(top-controls) {
+    display: none !important;
+  }
 }

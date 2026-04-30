@@ -41,6 +41,7 @@ export const HeroSection: React.FC = () => {
           muted
           loop
           controls={false}
+          noControls
           style={{
             height: '100%',
             width: '100%',
