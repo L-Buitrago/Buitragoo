@@ -2,7 +2,7 @@ import React from 'react';
 import { useLanguage } from '../../context/LanguageContext';
 import { Navbar } from './Navbar';
 import { FadeIn } from '../ui/FadeIn';
-
+import ReactPlayer from 'react-player';
 import { ContactButton } from '../ui/Buttons';
 
 export const HeroSection: React.FC = () => {
@@ -34,7 +34,18 @@ export const HeroSection: React.FC = () => {
         </div>
       </div>
 
-
+      <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+        <ReactPlayer
+          url="https://stream.mux.com/s8pMcOvMQXc4GD6AX4e1o01xFogFxipmuKltNfSYza0200.m3u8"
+          playing
+          loop
+          muted
+          playsinline
+          width="100%"
+          height="100%"
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 min-w-full min-h-full object-cover"
+        />
+      </div>
     </section>
   );
 };
