@@ -36,4 +36,9 @@
   mux-player::part(seek-live) {
     display: none !important;
   }
+
+  /* Nuclear option: hide the entire media controller UI */
+  mux-player::part(media-controller) {
+    display: none !important;
+  }
 }
