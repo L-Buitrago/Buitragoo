@@ -2,6 +2,7 @@ import React from 'react';
 import { useLanguage } from '../../context/LanguageContext';
 import { Navbar } from './Navbar';
 import { FadeIn } from '../ui/FadeIn';
+import MuxPlayer from '@mux/mux-player-react';
 import { ContactButton } from '../ui/Buttons';
 
 export const HeroSection: React.FC = () => {
@@ -33,24 +34,25 @@ export const HeroSection: React.FC = () => {
         </div>
       </div>
 
-      <div className="absolute inset-0 z-0 pointer-events-none">
-        <video
+      <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+        <MuxPlayer
+          playbackId="s8pMcOvMQXc4GD6AX4e1o01xFogFxipmuKltNfSYza0200"
           autoPlay
           muted
           loop
           playsInline
-          className="w-full h-full object-cover opacity-50"
-        >
-          <source 
-            src="https://stream.mux.com/s8pMcOvMQXc4GD6AX4e1o01xFogFxipmuKltNfSYza0200/high.mp4" 
-            type="video/mp4" 
-          />
-          {/* Fallback para o stream original caso o MP4 não esteja ativo */}
-          <source 
-            src="https://stream.mux.com/s8pMcOvMQXc4GD6AX4e1o01xFogFxipmuKltNfSYza0200.m3u8" 
-            type="application/x-mpegURL" 
-          />
-        </video>
+          noControls
+          style={{
+            height: '100%',
+            width: '100%',
+            objectFit: 'cover',
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            transform: 'scale(1.05)', // Garante que qualquer resquício de borda da UI seja cortado
+          }}
+          className="opacity-50 pointer-events-none"
+        />
       </div>
     </section>
   );
