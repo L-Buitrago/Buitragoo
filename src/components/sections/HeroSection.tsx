@@ -50,7 +50,7 @@ export const HeroSection: React.FC = () => {
             top: 0,
             left: 0,
           }}
-          className="opacity-50"
+          className="opacity-50 pointer-events-none"
         />
       </div>
     </section>

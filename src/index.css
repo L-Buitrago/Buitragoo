@@ -28,4 +28,12 @@
   mux-player::part(top-controls) {
     display: none !important;
   }
+
+  mux-player::part(seek-bar) {
+    display: none !important;
+  }
+
+  mux-player::part(seek-live) {
+    display: none !important;
+  }
 }
