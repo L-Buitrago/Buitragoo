@@ -8,7 +8,7 @@ import { ProjectsSection } from './components/sections/ProjectsSection';
 function App() {
   return (
     <LanguageProvider>
-      <main className="w-full bg-[#0C0C0C] min-h-screen text-[#D7E2EA] font-sans selection:bg-[#D7E2EA] selection:text-[#0C0C0C] overflow-x-hidden">
+      <main className="w-full bg-[#0C0C0C] min-h-screen text-[#D7E2EA] font-sans selection:bg-[#D7E2EA] selection:text-[#0C0C0C] overflow-x-clip">
         <HeroSection />
         <MarqueeSection />
         <AboutSection />
