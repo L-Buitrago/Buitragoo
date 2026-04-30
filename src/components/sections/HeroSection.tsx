@@ -2,7 +2,6 @@ import React from 'react';
 import { useLanguage } from '../../context/LanguageContext';
 import { Navbar } from './Navbar';
 import { FadeIn } from '../ui/FadeIn';
-import MuxPlayer from '@mux/mux-player-react';
 import { ContactButton } from '../ui/Buttons';
 
 export const HeroSection: React.FC = () => {
@@ -35,23 +34,23 @@ export const HeroSection: React.FC = () => {
       </div>
 
       <div className="absolute inset-0 z-0 pointer-events-none">
-        <MuxPlayer
-          playbackId="s8pMcOvMQXc4GD6AX4e1o01xFogFxipmuKltNfSYza0200"
+        <video
           autoPlay
           muted
           loop
           playsInline
-          noControls
-          style={{
-            height: '100%',
-            width: '100%',
-            objectFit: 'cover',
-            position: 'absolute',
-            top: 0,
-            left: 0,
-          }}
-          className="opacity-50 pointer-events-none"
-        />
+          className="w-full h-full object-cover opacity-50"
+        >
+          <source 
+            src="https://stream.mux.com/s8pMcOvMQXc4GD6AX4e1o01xFogFxipmuKltNfSYza0200/high.mp4" 
+            type="video/mp4" 
+          />
+          {/* Fallback para o stream original caso o MP4 não esteja ativo */}
+          <source 
+            src="https://stream.mux.com/s8pMcOvMQXc4GD6AX4e1o01xFogFxipmuKltNfSYza0200.m3u8" 
+            type="application/x-mpegURL" 
+          />
+        </video>
       </div>
     </section>
   );
