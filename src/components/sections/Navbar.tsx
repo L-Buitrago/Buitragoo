@@ -18,7 +18,7 @@ export const Navbar: React.FC = () => {
           <a href="#projects" className="text-[#D7E2EA] font-medium uppercase tracking-wider text-sm md:text-lg lg:text-[1.4rem] hover:opacity-70 transition-opacity duration-200">
             {t.navProjects}
           </a>
-          <a href="https://wa.me/5538998343021" target="_blank" rel="noopener noreferrer" className="text-[#D7E2EA] font-medium uppercase tracking-wider text-sm md:text-lg lg:text-[1.4rem] hover:opacity-70 transition-opacity duration-200">
+          <a href="https://wa.me/5538998343021?text=Olá!%20Tenho%20interesse%20na%20criação%20de%20um%20site." target="_blank" rel="noopener noreferrer" className="text-[#D7E2EA] font-medium uppercase tracking-wider text-sm md:text-lg lg:text-[1.4rem] hover:opacity-70 transition-opacity duration-200">
             {t.navContact}
           </a>
         </div>
