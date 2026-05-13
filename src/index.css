@@ -56,4 +56,20 @@
   mux-player::part(poster) {
     display: none !important;
   }
+  /* === Smoothness & Performance === */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Hardware acceleration for animated elements */
+  .motion-safe-gpu {
+    will-change: transform, opacity;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+  }
+
+  /* Smoother image rendering */
+  img {
+    image-rendering: -webkit-optimize-contrast;
+  }
 }

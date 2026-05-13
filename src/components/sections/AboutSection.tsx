@@ -56,7 +56,7 @@ export const AboutSection: React.FC = () => {
         <div className="flex flex-col items-center gap-16 sm:gap-20 md:gap-24 w-full">
           <AnimatedText 
             text={t.aboutText} 
-            className="text-[#D7E2EA] font-medium text-center leading-relaxed max-w-[560px] text-[clamp(1rem,2vw,1.35rem)]"
+            className="text-[#D7E2EA] font-medium text-center leading-relaxed max-w-[640px] text-[clamp(1rem,1.8vw,1.3rem)]"
           />
 
           <FadeIn delay={0.2} y={30}>
