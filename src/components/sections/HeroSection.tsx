@@ -13,13 +13,11 @@ export const HeroSection: React.FC = () => {
       <Navbar />
 
       <div className="flex-1 flex flex-col justify-between pt-10 pb-7 sm:pb-8 md:pb-10 px-6 md:px-10">
-        <div className="overflow-hidden">
-          <FadeIn delay={0.15} y={40}>
-            <h1 className="hero-heading font-black uppercase tracking-tight leading-none whitespace-nowrap w-full text-[9.5vw] sm:text-[10vw] md:text-[10.5vw] lg:text-[11vw] mt-6 sm:mt-4 md:-mt-5 text-center">
-              {t.heroHeading}
-            </h1>
-          </FadeIn>
-        </div>
+        <FadeIn delay={0.15} y={20}>
+          <h1 className="hero-heading font-black uppercase tracking-tight leading-[0.9] w-full text-[13vw] sm:text-[10vw] md:text-[10.5vw] lg:text-[11vw] mt-4 sm:mt-4 md:-mt-5 text-center px-4">
+            {t.heroHeading}
+          </h1>
+        </FadeIn>
 
         <div className="flex justify-between items-end relative z-20">
           <FadeIn delay={0.35} y={20}>
