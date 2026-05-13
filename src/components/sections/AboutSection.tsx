@@ -60,7 +60,7 @@ export const AboutSection: React.FC = () => {
           />
 
           <FadeIn delay={0.2} y={30}>
-            <ContactButton label={t.contactMe} onClick={() => window.open('https://wa.me/5538998343021', '_blank')} />
+            <ContactButton label={t.contactMe} href="https://wa.me/5538998343021" />
           </FadeIn>
         </div>
       </div>

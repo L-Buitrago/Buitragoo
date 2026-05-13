@@ -3,7 +3,7 @@ import { useLanguage } from '../../context/LanguageContext';
 import { Navbar } from './Navbar';
 import { FadeIn } from '../ui/FadeIn';
 import MuxVideo from '@mux/mux-video-react';
-import { ContactButton } from '../ui/Buttons';
+
 
 export const HeroSection: React.FC = () => {
   const { t } = useLanguage();
