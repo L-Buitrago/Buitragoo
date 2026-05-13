@@ -19,15 +19,11 @@ export const HeroSection: React.FC = () => {
           </h1>
         </FadeIn>
 
-        <div className="flex justify-between items-end relative z-20">
+        <div className="flex justify-start items-end relative z-20">
           <FadeIn delay={0.35} y={20}>
             <p className="text-[#D7E2EA] font-light uppercase tracking-wide leading-snug text-[clamp(0.75rem,1.4vw,1.5rem)] max-w-[160px] sm:max-w-[220px] md:max-w-[260px]">
               {t.heroSub}
             </p>
-          </FadeIn>
-
-          <FadeIn delay={0.5} y={20}>
-            <ContactButton label={t.contactMe} onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })} />
           </FadeIn>
         </div>
       </div>
