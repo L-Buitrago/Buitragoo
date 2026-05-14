@@ -31,7 +31,7 @@ const translations: Record<Language, Translations> = {
     aboutText: "With more than five years of experience in design, i focus on branding, web design, and user experience, i truly enjoy working with businesses that aim to stand out and present their best image. Let's build something incredible together!",
     servicesHeading: 'Services',
     services: [
-      { name: '3D Modeling', desc: 'Creation of detailed objects, characters, or environments tailored to specific client needs, ideal for games, products, and visualizations.' },
+      { name: 'AI Specialization', desc: 'Implementing artificial intelligence to automate processes, optimize workflows, and create intelligent solutions that drive your company\'s efficiency.' },
       { name: 'Rendering', desc: 'High-quality, photorealistic renders that showcase designs with custom lighting, textures, and materials to bring concepts to life.' },
       { name: 'Motion Design', desc: 'Dynamic animations and motion graphics that add energy and storytelling to brands, products, and digital experiences.' },
       { name: 'Branding', desc: 'Crafting cohesive visual identities — from logos to full brand systems — that communicate a clear and memorable presence.' },
@@ -52,7 +52,7 @@ const translations: Record<Language, Translations> = {
     aboutText: "Com mais de cinco anos de experiência em design, meu foco é branding, web design e experiência do usuário. Eu realmente gosto de trabalhar com empresas que buscam se destacar e apresentar sua melhor imagem. Vamos construir algo incrível juntos!",
     servicesHeading: 'Serviços',
     services: [
-      { name: 'Modelagem 3D', desc: 'Criação de objetos detalhados, personagens ou ambientes adaptados às necessidades específicas do cliente, ideal para jogos, produtos e visualizações.' },
+      { name: 'Especialização em IA', desc: 'Implementação de inteligência artificial para automatizar processos, otimizar fluxos de trabalho e criar soluções inteligentes que impulsionam a eficiência da sua empresa.' },
       { name: 'Renderização', desc: 'Renders de alta qualidade e fotorrealistas que exibem designs com iluminação, texturas e materiais personalizados para dar vida aos conceitos.' },
       { name: 'Motion Design', desc: 'Animações dinâmicas e motion graphics que adicionam energia e narrativa a marcas, produtos e experiências digitais.' },
       { name: 'Branding', desc: 'Criação de identidades visuais coesas — desde logotipos até sistemas de marca completos — que comunicam uma presença clara e memorável.' },
